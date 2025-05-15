@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/jerseyListFragment">
+
+    <fragment
+        android:id="@+id/jerseyListFragment"
+        android:name="com.example.myapplication.ui.fragment.JerseyListFragment"
+        android:label="Equipaciones">
+        <action
+            android:id="@+id/action_jerseyListFragment_to_jerseyDetailFragment"
+            app:destination="@id/jerseyDetailFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.myapplication.ui.fragment.CartFragment"
+        android:label="Carrito" />
+
+    <fragment
+        android:id="@+id/jerseyDetailFragment"
+        android:name="com.example.myapplication.ui.fragment.JerseyDetailFragment"
+        android:label="Detalle de equipación">
+        <!-- 'id' como string -->
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="team"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="float" />
+        <argument
+            android:name="description"
+            app:argType="string" />
+        <argument
+            android:name="imageUrl"
+            app:argType="string" />
+    </fragment>
+</navigation>

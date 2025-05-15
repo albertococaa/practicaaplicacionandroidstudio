@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="hint_username">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="action_login">Acceder</string>
+    <string name="back">Volver</string>
+    <string name="price_format">€%.2f</string>
+
+    <!-- Para el CheckBox “Recuérdame” -->
+    <string name="remember_me">Recuérdame</string>
+
+    <!-- Descripción accesible para el ojo de mostrar/ocultar -->
+    <string name="desc_toggle_password">Mostrar u ocultar contraseña</string>
+    <string name="jersey_image_desc">Imagen de la equipación</string>
+    <string name="add_to_cart">Añadir al carrito</string>
+
+    <string name="cart">Carrito</string>
+
+</resources>
